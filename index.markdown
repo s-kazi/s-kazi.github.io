@@ -4,7 +4,7 @@
 
 #layout: home
 
-layout: page
+layout: default
 title: Index
 permalink: /home/
 ---
