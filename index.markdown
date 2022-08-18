@@ -6,7 +6,7 @@
 
 layout: page
 title: Index
-permalink: /
+permalink: /home/
 ---
 
-This is a hom pahe
+This is a home page
