@@ -4,9 +4,9 @@
 
 #layout: home
 
-layout: default
+#layout: default
 title: Index
-permalink: /home/
+permalink: /
 ---
 
 This is a home page
