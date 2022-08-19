@@ -4,9 +4,12 @@
 
 #layout: home
 
-#layout: default
+layout: page
 title: Index
+subtitle: Demo
 permalink: /
+callouts: home_callouts
+show_sidebar: true
 ---
 
 This is a home page
