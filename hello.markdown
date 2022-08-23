@@ -4,7 +4,7 @@ title: Hello
 permalink: /hello/
 ---
 
-This is the a hello page in Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This is the a hello page in Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/). This is using bootstrap.
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /
