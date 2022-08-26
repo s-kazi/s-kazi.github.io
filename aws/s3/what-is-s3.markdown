@@ -1,0 +1,7 @@
+---
+layout: post
+title: S3
+permalink: /aws-s3/
+---
+
+S3, Amazon S3, or Simple Storage Service is one of the first service launched by AWS and it is one of the core services that allowed the possibilities of many companies like DropBox. Essentially, one can store unlimited data in any file formats and not have to worry about losing the data. S3 allows 11 9s  
