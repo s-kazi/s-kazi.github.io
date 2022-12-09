@@ -16,11 +16,11 @@ Let's [go to a link](/).
 
 Now some code,
 
-  var a = 1;
-  var b = 10;
+    var a = 1;
+    var b = 10;
   
-  function calc() {
-    return a * b;
-  }
+    function calc() {
+      return a * b;
+    }
   
 the end
