@@ -1,6 +1,6 @@
 ---
 layout: post
-title: sqs
+title: AWS SQS - Simple Queue Service
 permalink: /aws-sqs/
 ---
 
