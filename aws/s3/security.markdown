@@ -1,7 +1,7 @@
 ---
 layout: post
-title: S3 Security
-subtitle: Review Security in S3
+title: Security for AWS S3
+subtitle: Learn how to enable Security in S3 Buckets and Objects
 permalink: /aws-s3-security/
 ---
 
@@ -9,7 +9,13 @@ Amazon S3 (Simple Storage Service) is a highly scalable and durable object stora
 
 ### Encryption
 
-S3 supports server-side encryption of objects using AWS-managed keys, AWS KMS (Key Management Service) customer master keys, or customer-provided encryption keys. You can also use client-side encryption to encrypt data before uploading it to S3.
+S3 supports server-side encryption of objects using AWS-managed keys (SSE-S3), AWS KMS (Key Management Service) customer master keys, or customer-provided encryption keys. You can also use client-side encryption to encrypt data before uploading it to S3. Objects in S3 are encrypted by default starting from 2023.
+
+- AWS managed keys (SSE-S3): This is the default and easiest encryption setting for S3. The key is managed by AWS and the object is encrypted at rest with a unique key. SSE-S3 encrypts the key itself with a root key that it regularly rotates. SSE-S3 uses AES-256 standard to encrypt objects. 
+
+- Server-side encryption with AWS KMS keys (SSE-KMS): SSE-KMS is provided through an integration of the AWS KMS service with S3. AWS KMS provides more control over keys. It allows control policies control. 
+
+- Server-side encryption with customer-provided keys (SSE-C): With server-side encryption with customer-provided keys (SSE-C), the customer manage the encryption keys, and Amazon S3 manages encryption and decryption of the objects.
 
 ### Access Control
 
@@ -41,6 +47,10 @@ Secure transfer in AWS S3 refers to the process of securely transferring data be
 
 Public Access can be disabled for existing and new buckets in S3. This makes sure that there is no public access. Recently, AWS has enabled this option by default and all new S3 buckets will have public access disabled. This option is powerful and overrides other permissions that allow public access to the bucket.
 
+There are multiple options for Block Public Access.
+- Block Public Access settings for *S3 buckets*: This feature enables a set of S3 bucket settings that block public access to the bucket and its objects. 
+- Block Public Access settings for *AWS accounts*: This feature enables a set of AWS account settings that block public access to all S3 buckets and objects in the account. This feature ensures that your S3 resources are not inadvertently made public due to misconfigured access policies.
+
 ### Object Lock
 
 S3 Object Lock feature allows storing objects in write-once-read-many (WORM) model. This prevents accidental deletion or modification of objects and ensures that objects remain immutable for a specified retention period.
@@ -54,3 +64,10 @@ S3 supports two different modes for Object Lock: Governance mode or Compliance m
 S3 Object Lock works by applying a retention period to objects stored in S3. During the retention period, the objects cannot be deleted or overwritten. Once the retention period expires, the objects can be deleted or modified as usual.
 
 S3 Object Lock can be used in many scenarios where data immutability is required, such as financial records, legal documents, medical records, and other sensitive data. By using S3 Object Lock, you can be confident that your data is secure and cannot be accidentally or maliciously modified or deleted.
+
+### Access Points ###
+
+
+
+
+
