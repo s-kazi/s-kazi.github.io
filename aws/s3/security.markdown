@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Security for AWS S3
-subtitle: Learn how to enable Security in S3 Buckets and Objects
+title: Security in AWS S3
+subtitle: Let's enable Security in Buckets and Objects
 permalink: /aws-s3-security/
 ---
 
@@ -17,7 +17,7 @@ S3 supports server-side encryption of objects using AWS-managed keys (*SSE-S3*),
 
 - Server-side encryption with customer-provided keys (*SSE-C*): With server-side encryption with customer-provided keys (SSE-C), the customer manage the encryption keys, and Amazon S3 manages encryption and decryption of the objects.
 
-*** {#identifier .hr-blurry}
+--- {#identifier .hr-blurry}
 
 ### Access Control
 
