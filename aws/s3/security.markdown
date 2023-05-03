@@ -16,17 +16,19 @@ S3 supports server-side encryption of objects using AWS-managed keys (*SSE-S3*),
 - Server-side encryption with AWS KMS keys (*SSE-KMS*): SSE-KMS is provided through an integration of the AWS KMS service with S3. AWS KMS provides more control over keys. It allows control policies control. 
 
 - Server-side encryption with customer-provided keys (*SSE-C*): With server-side encryption with customer-provided keys (SSE-C), the customer manage the encryption keys, and Amazon S3 manages encryption and decryption of the objects.
+  
 
---- {#identifier .hr-blurry}
 
 ### Access Control
 
 Access control is a fundamental security feature in AWS S3. You can define who can access your data in S3 and what actions they can perform. You can use AWS Identity and Access Management (IAM) to create users and groups, and assign permissions to them.
+  
 
 ### Bucket Policies
 
 S3 bucket policies are an essential way to control access to your S3 buckets. You can use bucket policies to define who can access your buckets and what actions they can perform.
-
+  
+  
 ### Logging and Monitoring 
 
 AWS S3 provides logging and monitoring features to help you detect and respond to security incidents. You can enable access logging for your S3 buckets to record all requests made to them. You can also use Amazon CloudWatch to monitor S3 metrics and set alarms for anomalous activity.
