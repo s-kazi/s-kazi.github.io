@@ -1,11 +1,10 @@
 {% include header.html %}
 <main class="container">
   <div class="bg-light p-3 rounded mt-0">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.subtitle }}</p>
+    <h1>{{ page.title }} <small class="text-muted">{{ page.subtitle }}</small></h1>
   </div>
-  <div class="b-example-divider"></div>
-  <div class="fs-5 fs-lg-1">
+  <div class="b-example-divider"></div><br/>
+  <div class="fs-6 fs-lg-1">
     {{ content }}
   </div>
   

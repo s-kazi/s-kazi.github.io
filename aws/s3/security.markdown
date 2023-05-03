@@ -17,6 +17,8 @@ S3 supports server-side encryption of objects using AWS-managed keys (*SSE-S3*),
 
 - Server-side encryption with customer-provided keys (*SSE-C*): With server-side encryption with customer-provided keys (SSE-C), the customer manage the encryption keys, and Amazon S3 manages encryption and decryption of the objects.
 
+*** {#identifier .hr-blurry}
+
 ### Access Control
 
 Access control is a fundamental security feature in AWS S3. You can define who can access your data in S3 and what actions they can perform. You can use AWS Identity and Access Management (IAM) to create users and groups, and assign permissions to them.
