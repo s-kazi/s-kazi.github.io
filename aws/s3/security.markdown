@@ -9,13 +9,13 @@ Amazon S3 (Simple Storage Service) is a highly scalable and durable object stora
 
 ### Encryption
 
-S3 supports server-side encryption of objects using AWS-managed keys (SSE-S3), AWS KMS (Key Management Service) customer master keys, or customer-provided encryption keys. You can also use client-side encryption to encrypt data before uploading it to S3. Objects in S3 are encrypted by default starting from 2023.
+S3 supports server-side encryption of objects using AWS-managed keys (*SSE-S3*), AWS KMS (Key Management Service) customer master keys, or customer-provided encryption keys. You can also use client-side encryption to encrypt data before uploading it to S3. Objects in S3 are encrypted by default starting from 2023.
 
-- AWS managed keys (SSE-S3): This is the default and easiest encryption setting for S3. The key is managed by AWS and the object is encrypted at rest with a unique key. SSE-S3 encrypts the key itself with a root key that it regularly rotates. SSE-S3 uses AES-256 standard to encrypt objects. 
+- AWS managed keys (*SSE-S3*): This is the default and easiest encryption setting for S3. The key is managed by AWS and the object is encrypted at rest with a unique key. SSE-S3 encrypts the key itself with a root key that it regularly rotates. SSE-S3 uses AES-256 standard to encrypt objects. 
 
-- Server-side encryption with AWS KMS keys (SSE-KMS): SSE-KMS is provided through an integration of the AWS KMS service with S3. AWS KMS provides more control over keys. It allows control policies control. 
+- Server-side encryption with AWS KMS keys (*SSE-KMS*): SSE-KMS is provided through an integration of the AWS KMS service with S3. AWS KMS provides more control over keys. It allows control policies control. 
 
-- Server-side encryption with customer-provided keys (SSE-C): With server-side encryption with customer-provided keys (SSE-C), the customer manage the encryption keys, and Amazon S3 manages encryption and decryption of the objects.
+- Server-side encryption with customer-provided keys (*SSE-C*): With server-side encryption with customer-provided keys (SSE-C), the customer manage the encryption keys, and Amazon S3 manages encryption and decryption of the objects.
 
 ### Access Control
 
@@ -37,11 +37,11 @@ S3 versioning is a feature that allows you to store multiple versions of an obje
 
 Secure transfer in AWS S3 refers to the process of securely transferring data between your client and S3 over a network connection. S3 provides several secure transfer options to protect data in transit, including:
 
-- ***SSL/TLS encryption***: S3 uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) encryption to encrypt data in transit between your client and S3. SSL/TLS is a widely used encryption protocol that provides a secure and encrypted connection.
+- **SSL/TLS encryption**: S3 uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) encryption to encrypt data in transit between your client and S3. SSL/TLS is a widely used encryption protocol that provides a secure and encrypted connection.
 
-- ***AWS Transfer Family***: AWS Transfer Family is a fully managed service that enables you to transfer files over Secure File Transfer Protocol (SFTP), File Transfer Protocol over SSL/TLS (FTPS), and Secure Shell (SSH) File Transfer Protocol (SFTP) directly into and out of Amazon S3. AWS Transfer Family automatically scales to meet your file transfer needs and provides a highly available architecture that can be integrated with your existing authentication systems.
+- **AWS Transfer Family**: AWS Transfer Family is a fully managed service that enables you to transfer files over Secure File Transfer Protocol (SFTP), File Transfer Protocol over SSL/TLS (FTPS), and Secure Shell (SSH) File Transfer Protocol (SFTP) directly into and out of Amazon S3. AWS Transfer Family automatically scales to meet your file transfer needs and provides a highly available architecture that can be integrated with your existing authentication systems.
 
-- ***Amazon S3 Transfer Acceleration***: Amazon S3 Transfer Acceleration uses Amazon CloudFront's globally distributed edge locations to accelerate transfers over the public internet. When you enable S3 Transfer Acceleration, your data is routed through Amazon's network of edge locations, which can result in faster data transfer speeds and improved reliability.
+- **Amazon S3 Transfer Acceleration**: Amazon S3 Transfer Acceleration uses Amazon CloudFront's globally distributed edge locations to accelerate transfers over the public internet. When you enable S3 Transfer Acceleration, your data is routed through Amazon's network of edge locations, which can result in faster data transfer speeds and improved reliability.
 
 ### Block Public Access
 
@@ -53,7 +53,7 @@ There are multiple options for Block Public Access.
 
 ### Object Lock
 
-S3 Object Lock feature allows storing objects in write-once-read-many (WORM) model. This prevents accidental deletion or modification of objects and ensures that objects remain immutable for a specified retention period.
+S3 Object Lock feature allows storing objects in write-once-read-many (*WORM*) model. This prevents accidental deletion or modification of objects and ensures that objects remain immutable for a specified retention period.
 
 S3 supports two different modes for Object Lock: Governance mode or Compliance mode.
 
