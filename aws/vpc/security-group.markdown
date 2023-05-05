@@ -14,15 +14,34 @@ Security groups can be used on EC2 instances, ECS services, lambda functions, ap
 AWS security groups provide a powerful and flexible way to control network traffic in the cloud. They are a critical component of any AWS deployment and should be carefully configured to ensure that only authorized traffic is allowed to reach instances.
 
 ### How to set security group 
-Let's say we have an EC2 instance and RDS database and we want to allow connectivity a security group. For EC2 instances, we want to have the following rules.
+Let's say we have an EC2 instance and RDS database and we want to allow connectivity a security group. For EC2 instances, we want have the following rules.
 
 <div>
-<table>
+<table class="table table-dark">
 <tr><th>Protocol</th><th>Port</th><th>Source IP</th><th>Description</th></tr>
 <tr><td>TCP</td><td>80</td><td>0.0.0.0/0</td><td>Allow inbound HTTP traffic</td></tr>
 <tr><td>TCP</td><td>443</td><td>0.0.0.0/0</td><td>Allow inbound HTTPS traffic</td></tr>
 <tr><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td><td></td></tr>
+</table>
+</div>
+
+So, this EC2 allows traffic from anywhere on port 80 and port 443. Now, we need to consider whether the application in this EC2 is for internal (internal or private to a company) or for external public. Also, do you need both port 80 and 443, maybe just 443 will suffice or maybe port 80 is also to perform  redirect to port 443. If this is an internal application, the security rules could be updated as following.
+
+<div>
+<table class="table table-dark">
+<tr><th>Protocol</th><th>Port</th><th>Source IP</th><th>Description</th></tr>
+<tr><td>TCP</td><td>80</td><td>10.0.0.0/8</td><td>Allow inbound HTTP traffic</td></tr>
+<tr><td>TCP</td><td>443</td><td>10.0.0.0/8</td><td>Allow inbound HTTPS traffic</td></tr>
+</table>
+</div>
+
+By default, all outbound connections are allowed in a security group as shown below.
+
+<div>
+<table class="table table-dark">
+<tr><th>Protocol</th><th>Port</th><th>Destination IP</th><th>Description</th></tr>
+<tr><td>All</td><td>All</td><td>0.0.0.0/0</td><td>Allow outbound traffic</td></tr>
 </table>
 </div>
