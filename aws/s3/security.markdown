@@ -28,7 +28,7 @@ Access control is a fundamental security feature in AWS S3. You can define who c
 
 S3 bucket policies are an essential way to control access to your S3 buckets. You can use bucket policies to define who can access your buckets and what actions they can perform.
   
-  
+
 ### Logging and Monitoring 
 
 AWS S3 provides logging and monitoring features to help you detect and respond to security incidents. You can enable access logging for your S3 buckets to record all requests made to them. You can also use Amazon CloudWatch to monitor S3 metrics and set alarms for anomalous activity.
@@ -70,8 +70,9 @@ S3 Object Lock works by applying a retention period to objects stored in S3. Dur
 S3 Object Lock can be used in many scenarios where data immutability is required, such as financial records, legal documents, medical records, and other sensitive data. By using S3 Object Lock, you can be confident that your data is secure and cannot be accidentally or maliciously modified or deleted.
 
 ### Access Points ###
-
-
-
-
-
+  
+  
+  
+  
+  
+  
