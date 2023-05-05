@@ -18,7 +18,11 @@ Let's say we have an EC2 instance and RDS database and we want to allow connecti
 
 <div>
 <table>
-<tr><th>Protocol</th><th>Port</th><th>Source IP</th><th>Description</th>
-
+<tr><th>Protocol</th><th>Port</th><th>Source IP</th><th>Description</th></tr>
+<tr><td>TCP</td><td>80</td><td>0.0.0.0/0</td><td>Allow inbound HTTP traffic</td></tr>
+<tr><td>TCP</td><td>443</td><td>0.0.0.0/0</td><td>Allow inbound HTTPS traffic</td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
 </table>
 </div>
