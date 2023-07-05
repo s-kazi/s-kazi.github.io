@@ -7,7 +7,7 @@ permalink: /aws-vpc-security-group-security/
 
 AWS security group is a virtual firewall that controls inbound and outbound traffic for instances in AWS. It acts as a firewall between instances and the internet, allowing administrators to specify which traffic is allowed to reach instances and which traffic is not.
 
-AWS security groups can be thought of as a set of firewall rules that control access to instances. Each security group has a set of inbound and outbound rules that filter traffic based on the protocol, port, and source or destination IP address. By default, all inbound traffic is blocked and all outbound traffic is allowed, but administrators can create custom rules to allow specific traffic.
+AWS security group is a virtual firewall that control access to instances and outbound connections. Each security group has a set of inbound and outbound rules that filter traffic based on the protocol, port, and source or destination IP address. By default, all inbound traffic is blocked and all outbound traffic is allowed, but administrators can create custom rules to allow specific traffic.
 
 Security groups can be used on EC2 instances, ECS services, lambda functions, application load balancers, RDS databases and most other compute related resources. Security groups are assigned to instances when they are launched, and instances can have multiple security groups assigned to them. They are region-specific and can be used to control traffic between instances in the same region, as well as traffic between different regions.
 
