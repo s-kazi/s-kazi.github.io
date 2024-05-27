@@ -1,6 +1,8 @@
 {% include header.html %}
 
-{% include {{ page.leftmenu }} %}
+{% if page.my_variable %}
+  {% include {{ page.leftmenu }} %}
+{% endif %}
 
 <main class="container">
   <!--<div class="bg-light p-3 rounded mt-0">
