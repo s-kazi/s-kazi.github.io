@@ -4,12 +4,12 @@
 
 #layout: home
 
-layout: page
+layout: forward
 title: Index
-subtitle: Demo
+#subtitle: Demo
 permalink: /
-callouts: home_callouts
-show_sidebar: true
+#callouts: home_callouts
+#show_sidebar: true
 target: https://www.linkedin.com/in/s-kz/
 ---
 
