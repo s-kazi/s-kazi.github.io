@@ -10,6 +10,7 @@ subtitle: Demo
 permalink: /
 callouts: home_callouts
 show_sidebar: true
+target: https://www.linkedin.com/in/s-kz/
 ---
 
-This is a home page
+Website currently under development
