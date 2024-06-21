@@ -31,20 +31,22 @@ By default, all permissions are denied and if you somehow set permissions at dif
 
 An IAM policy has the following structure with minimal elements.
 
-`{`
-  `"Version": "2012-10-17",`
-  `"Statement": [`
-  `  {`
-  `    "Sid": "StatementID",`
-  `    "Action": [`
-`		"list_of_permissions"`
-`      ],`
-`      "Effect": "Allow",`
-`      "Resource": "ARN of the resource or * to specify all resource"`
-`      }`
-`    }`
-`  ]`
-`}`
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "StatementID",
+      "Action": [
+		"list_of_permissions"
+      ],
+      "Effect": "Allow",
+      "Resource": "ARN of the resource or * to specify all resource"
+      }
+    }
+  ]
+}
+```
 
 
 - Version: Refers to version of policy document. You can stick to using 2012-10-17.
@@ -62,12 +64,13 @@ For resource ARN (Amazon Resource Name), it has the following basic structure.
 
 So, for a S3 bucket, an arn could be
 
-
-`arn:aws:s3:ap-southeast-2:987654321012:my-bucket/* `
-`## S3 endpoint is global, thus region & account is not needed. So, the arn could be `
-`## the * denotes to all objects in the bucket`
-`arn:aws:s3:::my-bucket/* `
-`## to select objects under a prefix`
+```
+arn:aws:s3:ap-southeast-2:987654321012:my-bucket/* 
+## S3 endpoint is global, thus region & account is not needed. So, the arn could be 
+## the * denotes to all objects in the bucket
+arn:aws:s3:::my-bucket/* 
+## to select objects under a prefix
+```
 
 The **Condition** can be used to check for additional properties that limits the permission. For example, it can be used to check for tags or source IP, etc. It can check for string, numeric, datetime and boolean properties. Following is an example of a policy that specifies that objects in S3 can only be downloaded over TLS.
 
