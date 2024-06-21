@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What is IAM Root User
+title: IAM Root User
 subtitle: How to protect Root User
 permalink: /aws-iam-root-user/
 leftmenu: left-menu/aws-iam.html
@@ -24,7 +24,7 @@ The root user is important. If it is leaked, essentially, access to your entire 
 
 - **Avoid Access Keys for Root User**: This is an absolute no. Do not ever setup access keys for root user. Setting up access keys also means to save it somewhere which can lead to leaked keys, for example, accidental check in to your source control like GitHub.
 
-- **Use Strong Password**: For any password, always use strong passwords. Require number, upper/lower case letters, special characters and have minimum length to 8+ or 10+. Save the password in password manager or your company vault.  
+- **Use Strong Password**: For any password, always use strong passwords. Require number, upper/lower case letters, special characters and have minimum length to 8 character. Save the password in password manager or your company vault.  
 
 - **Use SCP to restrict Root User**: You can use service control policies to restrict the use of root password. It is best to do so to limit the blast radius.
 
