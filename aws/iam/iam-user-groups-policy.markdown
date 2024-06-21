@@ -74,50 +74,23 @@ arn:aws:s3:::my-bucket/*
 
 The **Condition** can be used to check for additional properties that limits the permission. For example, it can be used to check for tags or source IP, etc. It can check for string, numeric, datetime and boolean properties. Following is an example of a policy that specifies that objects in S3 can only be downloaded over TLS.
 
-`{`
-`  "Version": "2012-10-17",`
-`  "Statement": [`
-`    {`
-`      "Sid": "Stmt987654",`
-`      "Action": [`
-`        "s3:GetObject"`
-`      ],`
-`      "Effect": "Allow",`
-`      "Resource": "arn:aws:s3:::my-bucket/my_prefix/*",`
-`      "Condition": {`
-`        "Bool": {`
-`          "aws:SecureTransport": "false"`
-`        }`
-`      }`
-`    }`
-`  ]`
-`}`
-
-
-
-
-
-
-
-
-
-You need to use the root user for account setup related activities, billing modification, support upgrades. These cannot be performed by other IAM users.
-
-### Best Practice to Protect Root User
-The root user is important. If it is leaked, essentially, access to your entire AWS account is leaked. The root user can make any modification, delete resources and even close the account. Protecting the root user is super important.
-
-- **Enable Multi-Factor Authentication (MFA)**: Like protecting any user account, you must protect root user with an MFA. This is critical and will stop most your console access related concerns.
-
-- **Avoid Using Root User**: Not using the root user unless you have no other choice is ideal. Certain tasks can only be done by root user; otherwise do not use it.
-
-- **Use IAM Users**: Use IAM users instead of root users. Using IAM users is also not ideal but if you don't have other choice, setup an IAM user with limited access and use it instead of root user.
-
-- **Avoid Access Keys for Root User**: This is an absolute no. Do not ever setup access keys for root user. Setting up access keys also means to save it somewhere which can lead to leaked keys, for example, accidental check in to your source control like GitHub.
-
-- **Use Strong Password**: For any password, always use strong passwords. Require number, upper/lower case letters, special characters and have minimum length to 8 character. Save the password in password manager or your company vault.  
-
-- **Use SCP to restrict Root User**: You can use service control policies to restrict the use of root password. It is best to do so to limit the blast radius.
-
-- **Check changes using AWS Config**: AWS Config checks and alerts for changes to your resources. Use Config rules to check for any changes to your root user and also IAM policies.
-
-- **IAM Policies and Permissions**: You should conduct regular audits for your IAM policies. You should remove unnecessary permissions when not required. You can take advantage of IAM Access Analyser to identity unnecessary permissions.
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt987654",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::my-bucket/my_prefix/*",
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "false"
+        }
+      }
+    }
+  ]
+}
+```
