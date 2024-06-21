@@ -94,3 +94,15 @@ The **Condition** can be used to check for additional properties that limits the
   ]
 }
 ```
+
+### Attach IAM Policy to IAM User
+Once the IAM policies are setup, you can attach it to the IAM users. The IAM users can have one or more policies. It can be attached as shown below.
+
+--images here
+
+From permission policies section, select the policies you configured or want to apply to the user and continue.
+
+### Attach IAM Policy to IAM User Group
+IAM policies can be attached to the IAM groups from console and CLI. Users in the groups will obtain the same permissions as defined the IAM policies in the group. IAM policies can be attached to the group like adding the policies to user.
+
+--images here
