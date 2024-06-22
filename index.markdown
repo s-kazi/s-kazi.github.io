@@ -11,6 +11,7 @@ permalink: /
 #callouts: home_callouts
 #show_sidebar: true
 target: https://www.linkedin.com/in/s-kz/
+time: 10
 ---
 
-Website currently under development
+Website currently under development. You will be redirected.
