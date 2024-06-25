@@ -61,9 +61,10 @@ The **Condition** can be used to check for additional properties that limits the
 ### Attach IAM Policy to IAM Role ###
 Attaching policies to IAM roles is similar but slightly different to attaching it for IAM users and user groups. When creating the role, you need to select the AWS service, account or federation that can use this role. This is defining the trust policy.
 
-   ![Select trusted entity](https://shajam-s3.s3.amazonaws.com/images/aws/iam/trusted-entity.png)
+   ![Select trusted entity](https://shajam-s3.s3.amazonaws.com/images/aws/iam/iam-role-trust.png)
 
 In this example, I selected Lambda as the trusted service. In the next section, you can select the permission/policies that will apply to the role. In the last section, you can enter the name and description for the role.
+
    ![Configure permissions IAM role](https://shajam-s3.s3.amazonaws.com/images/aws/iam/configure-role.png)
 
 You can view the trusted policy and verify or edit the permissions. You can optionally add tags and configure the role.
@@ -84,7 +85,7 @@ Inline policies are policies defined inline within the user, group, or role. The
 
 *Inline policies* are policies defined inline within the user, group, or role. These policies have one-to-one relation with resource it is attached to. When you modify a role, you can attach the inline policy through the console.
 
-    ![Setup Inline Policies for IAM Role](https://shajam-s3.s3.amazonaws.com/images/aws/iam/inline-policy-for-role.png)
+![Setup Inline Policies for IAM Role](https://shajam-s3.s3.amazonaws.com/images/aws/iam/inline-policy-for-role.png)
 
 
 ### Service Linked IAM Roles ###
