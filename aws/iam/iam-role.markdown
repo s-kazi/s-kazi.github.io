@@ -93,6 +93,59 @@ Service Linked IAM Roles are unique and are directly linked to an AWS service. T
 
 For example, when you use ECS (container service), a service linked role is configured with ARN like `arn:aws:iam::987654321012:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS`.
 
+#### Key Features of Service-Linked Roles
+
+**Predefined Permissions**:
+   - Service-linked roles come with predefined policies that grant the necessary permissions for the service to function correctly.
+
+**Service Management**:
+   - AWS services automatically configure and manage these roles. This ensures that the correct permissions are applied and simplifies role management for users.
+
+**Secure and Isolated**:
+   - These roles are used only by the linked service, ensuring that permissions are not misused or accessed by other services or users.
+
+### Configuration
+
+**Automatic Configuration**:
+   - AWS services automatically configure service-linked roles when you enable the service or a specific feature that requires the role. For example, enabling AWS Config might automatically configure a service-linked role with permissions to record and manage resource configurations.
+
+**Manual Configuration**:
+   - You can also manually configure a service-linked role. AWS provides specific instructions for each service on how to do this. This lets control which service linked roles are configured in your account. Using service catalog, you can deploy these roles simultaneously instead of configuring in individual accounts.
+
+**Deletion**:
+   - These roles can only be deleted if the service that uses them no longer requires them. AWS prevents the deletion of service-linked roles that are still in use to avoid disrupting service functionality.
+
+### Examples of Service-Linked Roles
+
+**Amazon EC2**:
+   - The `AWSServiceRoleForEC2Spot` role allows Amazon EC2 Spot instances to communicate with other AWS services on your behalf.
+
+**AWS Config**:
+   - The `AWSServiceRoleForConfig` role enables AWS Config to record and manage configurations of supported resources.
+
+### Benefits of Service-Linked Roles
+
+**Simplified Permissions Management**:
+   - By automatically creating and managing these roles, AWS reduces the complexity and potential errors in manually assigning permissions.
+
+**Enhanced Security**:
+   - Since the roles are managed and used only by the specific AWS service, the risk of improper access or privilege escalation is minimized.
+
+**Audit and Compliance**:
+   - These roles are designed to meet AWS security best practices and compliance requirements, helping organizations maintain a secure and compliant environment.
+
+### How to View and Manage Service-Linked Roles
+
+**Viewing Roles**:
+   - You can view service-linked roles in the IAM console by navigating to the "Roles" section. Service-linked roles are marked with a specific service identifier.
+
+**Role Policies**:
+   - The policies attached to service-linked roles can be viewed but are managed by the AWS service. You can review these policies to understand what permissions are granted.
+
+**Troubleshooting**:
+   - If a service-linked role is not working correctly, ensure that the AWS service is enabled and configured properly. AWS documentation provides troubleshooting steps specific to each service.
+
+
 ### IAM Permission Boundary ###
 Permission Boundary is essentially a guardrail that you can configure for the role and user permissions. This defines the maximum permissions that the IAM resource can have. For example, you can configure a permission boundary with only S3 and SQS permissions. Now if you configure a role with permissions to EC2 and attach the permission boundary, the role will still not be able to use the EC2 permission (*blocked by permission boundary*).
 
