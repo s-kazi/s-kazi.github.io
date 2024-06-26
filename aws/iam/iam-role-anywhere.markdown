@@ -2,7 +2,7 @@
 layout: post
 title: IAM Roles Anywhere
 subtitle: Connect to AWS with temporary credentials
-permalink: /aws-iam-access-analyser/
+permalink: /aws-iam-roles-anywhere/
 leftmenu: left-menu/aws-iam.html
 ---
 
