@@ -147,6 +147,6 @@ For example, when you use ECS (container service), a service linked role is conf
 
 
 ### IAM Permission Boundary ###
-Permission Boundary is essentially a guardrail that you can configure for the role and user permissions. This defines the maximum permissions that the IAM resource can have. For example, you can configure a permission boundary with only S3 and SQS permissions. Now if you configure a role with permissions to EC2 and attach the permission boundary, the role will still not be able to use the EC2 permission (*blocked by permission boundary*).
+Permission Boundary is essentially a [guardrail that you can configure for the role and user permissions](/aws-iam-least-privilege/). This defines the maximum permissions that the IAM resource can have. For example, you can configure a permission boundary with only S3 and SQS permissions. Now if you configure a role with permissions to EC2 and attach the permission boundary, the role will still not be able to use the EC2 permission (*blocked by permission boundary*).
 
 The permission boundary is useful when you for example let a team configure the IAM roles but want to make sure that they only play within the boundary.

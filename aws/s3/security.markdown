@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Security in AWS S3
-subtitle: Let's enable Security in Buckets and Objects
+subtitle: Enable Security in S3 Buckets and Objects
 permalink: /aws-s3-security/
 leftmenu: left-menu/s3.html
 ---

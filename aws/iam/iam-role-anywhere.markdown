@@ -8,7 +8,7 @@ leftmenu: left-menu/aws-iam.html
 
 IAM Roles Anywhere is a powerful IAM capability that lets you provide third party applications and on-premises servers (non-AWS resources) access to you AWS accounts without using access keys. These permissions are temporary, can be easily changed or revoked if needed and it ties to the specific servers.
 
-![IAM Roles Anywhere](https://shajam-s3.s3.amazonaws.com/images/aws/iam/iam-role-anywhere-design.png)
+![IAM Roles Anywhere](https://shajam-s3.s3.amazonaws.com/images/aws/iam/iam-roles-anywhere-design.png)
 
  IAM Roles Anywhere uses X.509 certificates issued by your Certificate Authority (CA). When these non-AWS resources require access to AWS, these authenticate using certificates and  establish a trusted connection. 
 
