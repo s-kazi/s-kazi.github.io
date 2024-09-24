@@ -30,6 +30,16 @@
   </script>
 
   <link rel="sitemap" type="text/html" title="Sitemap" href="/sitemap/">
+
+
+  <script>
+    const links = document.querySelectorAll('#relatedLinks a');
+    
+    links.forEach(link => {
+      link.classList.add('list-group-item');
+      link.classList.add('list-group-item-action');
+    });
+  </script>
 </head>
 
 <body>
