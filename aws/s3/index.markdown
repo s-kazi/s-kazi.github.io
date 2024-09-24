@@ -3,7 +3,7 @@ layout: post
 title: S3
 subtitle: S3 is a core service in AWS
 permalink: /aws-s3/
-leftmenu: left-menu/s3.html
+leftmenu: left-menu/aws-s3.html
 ---
 
 

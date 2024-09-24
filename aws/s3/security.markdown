@@ -3,7 +3,7 @@ layout: post
 title: Security in AWS S3
 subtitle: Enable Security in S3 Buckets and Objects
 permalink: /aws-s3-security/
-leftmenu: left-menu/s3.html
+leftmenu: left-menu/aws-s3.html
 ---
 
 Amazon S3 (Simple Storage Service) is a highly scalable and durable object storage service provided by Amazon Web Services (AWS). S3 offers several security features to protect the data stored in it. Here are some of the security measures you can take to secure your data in AWS S3
