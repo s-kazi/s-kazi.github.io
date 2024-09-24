@@ -4,6 +4,7 @@ title: IAM Roles
 subtitle: Best practice using IAM roles
 permalink: /aws-iam-role/
 leftmenu: left-menu/aws-iam.html
+related: related-links/aws-iam.html
 ---
 
 IAM roles are identities configured on an AWS account. It is like IAM users. It is used to provide AWS resource access to other AWS services. For example, if write a Lambda function that will write data to a S3 bucket, you need to give access to Lambda to write to S3. This permission can be given by using IAM roles. 

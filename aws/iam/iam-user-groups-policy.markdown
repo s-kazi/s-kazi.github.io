@@ -4,6 +4,7 @@ title: IAM Users, Groups and Policies
 subtitle: How to use IAM Users, Groups and Policies
 permalink: /aws-iam-user-groups-policy/
 leftmenu: left-menu/aws-iam.html
+related: related-links/aws-iam.html
 ---
 
 ### IAM User

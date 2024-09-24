@@ -15,6 +15,12 @@
   <div class="fs-5 fs-lg-1 my-font">
     {{ content }}
   </div>  
+
+  <div class="list-group">
+{% if page.related %}
+  {% include {{ page.related }} %}
+{% endif %}
+  </div>
 </main>
 
 {% if page.leftmenu %}

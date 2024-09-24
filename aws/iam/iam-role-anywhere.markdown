@@ -4,6 +4,7 @@ title: IAM Roles Anywhere
 subtitle: Connect to AWS with temporary credentials
 permalink: /aws-iam-roles-anywhere/
 leftmenu: left-menu/aws-iam.html
+related: related-links/aws-iam.html
 ---
 
 IAM Roles Anywhere is a powerful IAM capability that lets you provide third party applications and on-premises servers (non-AWS resources) access to you AWS accounts without using access keys. These permissions are temporary, can be easily changed or revoked if needed and it ties to the specific servers.

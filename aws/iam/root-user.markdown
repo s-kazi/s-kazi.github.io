@@ -4,6 +4,7 @@ title: IAM Root User
 subtitle: How to protect Root User
 permalink: /aws-iam-root-user/
 leftmenu: left-menu/aws-iam.html
+related: related-links/aws-iam.html
 ---
 
 IAM is a core AWS service and that helps with access control to various AWS resources. Resources can be the entities like S3 bucket, RDS database, etc. IAM performs both authentication and authorisation for resources. AWS supports fine-grained access controls and IAM should be appropriately used to set the security permissions to achieve least privileged access.

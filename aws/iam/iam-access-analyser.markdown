@@ -4,6 +4,7 @@ title: IAM Access Analyser
 subtitle: Analyse your IAM roles, policies
 permalink: /aws-iam-access-analyser/
 leftmenu: left-menu/aws-iam.html
+related: related-links/aws-iam.html
 ---
 
 IAM Access Analyser helps in refining permissions to achieve least privileged access. With access analyser, you can centrally review the permissions, refine permissions, and therefore apply least privileged access. For example, when enabled you can review all the unused permissions and take actions (maybe delete the permission).

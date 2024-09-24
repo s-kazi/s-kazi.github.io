@@ -4,6 +4,7 @@ title: Principle of Least Privilege
 subtitle: PoLP in terms of AWS
 permalink: /aws-iam-least-privilege/
 leftmenu: left-menu/aws-iam.html
+related: related-links/aws-iam.html
 ---
 
 The Principle of Least Privilege (PoLP) is a key security concept that defines that users, systems, and processes should only have the minimal levels of access necessary to perform their tasks. In AWS, this principle ensures that permissions granted to users and resources are restricted to the lowest level necessary for them to complete their work, thus minimizing potential security risks.
