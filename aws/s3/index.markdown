@@ -4,6 +4,7 @@ title: S3
 subtitle: S3 is a core service in AWS
 permalink: /aws-s3/
 leftmenu: left-menu/aws-s3.html
+related: related-links/aws-s3.html
 ---
 
 
