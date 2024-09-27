@@ -63,12 +63,13 @@
       // Loop through each h3 element
       h3Elements.forEach(h3 => {
           const id = h3.id; // Get the id of the h3 element
+          const text = h3.textContent;
 
           if (id) { // Ensure the h3 element has an id
               // Create a new anchor element
               const anchor = document.createElement('a');
               anchor.href = `#${id}`; // Set the href to the h3 id
-              anchor.innerText = id; // Set the anchor text to the h3 id
+              anchor.innerText = text; // Set the anchor text to the h3 id
               anchor.style.textDecoration = 'none'; // Optionally remove the underline
 
               // Append the anchor to the div
