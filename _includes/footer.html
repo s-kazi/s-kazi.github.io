@@ -50,5 +50,32 @@
     link.classList.add('link-primary');
   });
 </script>
+
+<script>
+  // JavaScript to generate the anchor links
+  (function() {
+      // Select all h3 elements
+      const h3Elements = document.querySelectorAll('h3');
+
+      // Get the div where the anchor links will be placed
+      const anchorListDiv = document.getElementById('anchor-list');
+
+      // Loop through each h3 element
+      h3Elements.forEach(h3 => {
+          const id = h3.id; // Get the id of the h3 element
+
+          if (id) { // Ensure the h3 element has an id
+              // Create a new anchor element
+              const anchor = document.createElement('a');
+              anchor.href = `#${id}`; // Set the href to the h3 id
+              anchor.innerText = id; // Set the anchor text to the h3 id
+              anchor.style.textDecoration = 'none'; // Optionally remove the underline
+
+              // Append the anchor to the div
+              anchorListDiv.appendChild(anchor);
+          }
+      });
+  })();
+</script>
 </body>
 </html>
