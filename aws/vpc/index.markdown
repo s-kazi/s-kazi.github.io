@@ -4,13 +4,14 @@ title: Design Network in AWS
 subtitle: using AWS VPC
 permalink: /aws-vpc/
 leftmenu: left-menu/aws-vpc.html
+related: related-links/aws-vpc.html
 ---
 
 ### AWS VPC (Amazon Virtual Private Cloud)
 
 **Amazon Virtual Private Cloud (VPC)** is a service that lets you provision a logically isolated section of the Amazon Web Services (AWS) cloud where you can launch AWS resources, such as EC2 instances, in a virtual network that you define. With VPC, you have complete control over your virtual networking environment, including IP address ranges, subnets, route tables, internet gateways, and network access control lists (ACLs).
 
-### Key Components of AWS VPC:
+### Key Components of AWS VPC
 
 1. **Subnets:**
    - Subnets are subdivisions within a VPC that let you segment your resources. Each subnet maps to a specific **Availability Zone**.
@@ -52,7 +53,7 @@ leftmenu: left-menu/aws-vpc.html
 12. **Endpoints:**
     - **VPC Endpoints** allow you to connect your VPC to supported AWS services, like S3 or DynamoDB, without routing traffic over the public internet.
 
-### Use Cases of VPC:
+### Use Cases of VPC
 
 - **Isolated Environment for Applications:**
   - Deploy applications that require secure, isolated environments. You can have both public-facing and private components in the same VPC.
@@ -66,7 +67,7 @@ leftmenu: left-menu/aws-vpc.html
 - **Multi-Tier Architecture:**
   - You can host a multi-tier web application by deploying the web servers in a public subnet and database servers in a private subnet.
 
-### Benefits of AWS VPC:
+### Benefits of AWS VPC
 
 1. **Full Control Over Network:**
    - You control IP addressing, subnets, routing tables, and gateways, providing you with a secure, configurable virtual network.

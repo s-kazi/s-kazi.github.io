@@ -4,6 +4,7 @@ title: Enable security using
 subtitle: AWS Security Group
 permalink: /aws-vpc-security-group-security/
 leftmenu: left-menu/aws-vpc.html
+related: related-links/aws-vpc.html
 ---
 
 AWS security groups are virtual firewall that controls inbound and outbound traffic for instances in AWS. It acts as a firewall between instances and the internet, allowing administrators to specify which traffic is allowed to reach instances and which traffic is not.

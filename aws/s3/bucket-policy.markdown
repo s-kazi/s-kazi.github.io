@@ -11,8 +11,8 @@ You can secure AWS S3 buckets using a **bucket policy** involves defining a set 
 
 Here are the key steps and examples to secure your AWS S3 bucket using a bucket policy:
 
-### 1. Deny Public Access (Default Secure Setup)
-To ensure that your bucket is not publicly accessible, you can deny all public access by configuring the bucket policy.
+### 1. Access Over SSL only
+To ensure that your bucket is only accessible over TLS, you can deny all other traffic by configuring the bucket policy.
 
 ```json
 {
@@ -253,7 +253,7 @@ Here's the bucket policy.
 
 ---
 
-### Additional Consideration:
+### Additional Consideration
 - Always follow the [principle of least privilege](/aws-iam-least-privilege/), ensuring users and roles only get the minimum permissions they need.
 - Regularly review and update your bucket policies.
 - Enable **AWS CloudTrail** to log bucket activity for auditing purposes.

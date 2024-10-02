@@ -7,7 +7,7 @@ leftmenu: left-menu/aws-iam.html
 related: related-links/aws-iam.html
 ---
 
-IAM is a core AWS service and that helps with access control to various AWS resources. Resources can be the entities like S3 bucket, RDS database, etc. IAM performs both authentication and authorisation for resources. AWS supports fine-grained access controls and IAM should be appropriately used to set the security permissions to achieve least privileged access.
+IAM (Identity and Access Management) is a core AWS service and that helps with access control to various AWS resources. Resources can be the entities like S3 bucket, RDS database, etc. IAM performs both authentication and authorisation for resources. AWS supports fine-grained access controls and IAM should be appropriately used to set the security permissions to achieve least privileged access.
 
 ### Root User
 The root user is the first user that is automatically configured when you open an AWS account. The root user will exist until you close the account. The root user can be used for both console and CLI access (by using access keys). Note, it is not recommended to use root user for day-to-day operation. You should enable MFA for root user and disable or delete any access keys.

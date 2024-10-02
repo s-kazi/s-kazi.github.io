@@ -4,6 +4,7 @@ title: How to harden Security Group
 subtitle: AWS Security Group
 permalink: /aws-vpc-harden-security-group/
 leftmenu: left-menu/aws-vpc.html
+related: related-links/aws-vpc.html
 ---
 
 Hardening security groups (SGs) in cloud environments like AWS is crucial to maintaining a secure infrastructure. [Security groups](/aws-vpc-security-group-security/) act as virtual firewalls to control inbound and outbound traffic at the instance level. Here are **best practices** for hardening these:
