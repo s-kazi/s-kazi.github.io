@@ -23,3 +23,4 @@ permalink: /sitemap/
 - [Enable Security in S3 Buckets and Objects](/aws-s3-security/)
 - [Security in S3](/aws-s3-security/)
 - [Secure S3 Bucket using Bucket Policy](/aws-s3-security-bucket-policy/")
+- [True costs of storing data in S3] (/aws-s3-true-cost/)
