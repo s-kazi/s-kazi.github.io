@@ -113,7 +113,7 @@ This example demonstrates how to:
 With a lifecycle policy, you can automatically manage your S3 storage to optimize costs based on your data access patterns.
 
 ### Transitioning Objects Smaller than 128KB
-By default, you cannot transition objects smaller than 128KB. This is done to avoid the unnecessary costs of transition. Check the [S3 costs](/aws-s3-true-cost/) S3 costs to get more details. To transition smaller objects, you need to allow a filter for `ObjectSizeGreaterThan` as shown below.
+By default, you cannot transition objects smaller than 128KB. This is done to avoid the unnecessary costs of transition. Check [S3 costs](/aws-s3-true-cost/) to get more details. To transition smaller objects, you need to allow a filter for `ObjectSizeGreaterThan` as shown below.
 
 
 ```json
